@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://dscy1l4mmp0pe"]
 
-[ext_resource type="Texture2D" uid="uid://d3agj3m2mw0sr" path="res://1.png" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://c8sclgjg862lg" path="res://paddle.tscn" id="1_wtcfe"]
 
 [node name="Node2D" type="Node2D" unique_id=254652963]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=970126784]
-position = Vector2(585, 332)
-texture = ExtResource("1_wtcfe")
+[node name="Paddle1" parent="." unique_id=142249213 instance=ExtResource("1_wtcfe")]
+position = Vector2(40, 324)
+
+[node name="Paddle2" parent="." unique_id=1532804869 instance=ExtResource("1_wtcfe")]
+position = Vector2(1112, 324)
+up_action = "p2_up"
+down_action = "p2_down"
